@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const FetchData = ({ cat }) => {
   const [Data, setData] = useState();
   const [Page, setPage] = useState(1);
-  
+
   const pageHandlerNext = () => {
     if (Page < 5) {
       setPage(Page + 1);
@@ -22,7 +22,7 @@ const FetchData = ({ cat }) => {
     }
   };
 
-  const [dataLength, setDataLength] = useState(0);
+  // const [dataLength, setDataLength] = useState(0);
   const category = cat.toUpperCase();
   const fetchData = async () => {
     await axios
@@ -33,7 +33,7 @@ const FetchData = ({ cat }) => {
       )
       .then((res) => {
         setData(res.data.articles);
-        setDataLength(res.data.articles.length); // set data length
+        // setDataLength(res.data.articles.length); // set data length
       })
       .catch((err) => console.log(err));
   };

@@ -14,10 +14,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route path="/general" element={<FetchData cat="general" />} />
           <Route path="/business" element={<FetchData cat="business" />} />
-          <Route
-            path="/entertainment"
-            element={<FetchData cat="entertainment" />}
-          />
+          <Route path="/entertainment" element={<FetchData cat="entertainment" />}/>
           <Route path="/technology" element={<FetchData cat="technology" />} />
         </Routes>
       </Router>
