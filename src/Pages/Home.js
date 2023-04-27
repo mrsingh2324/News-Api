@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <FetchData/>
+      <FetchData cat="general"/>
     </div>
   );
 };
